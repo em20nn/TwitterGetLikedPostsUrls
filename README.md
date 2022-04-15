@@ -21,6 +21,7 @@ This script has been written in Windows 10 and only works on Windows PCs.
 They can be installed by running:
 
 for python --> download the latest version from python.org
+
 OPEN A CMD COMMAND LINE
 ````
 py -m pip install selenium
