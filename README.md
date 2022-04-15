@@ -7,6 +7,7 @@ A python script to get all liked posts urls and write them into a file.
 
 This script has been written for and only Windows.
 
+- [chrome]
 - [python]
 - [hashlib]
 - [selenium]
@@ -19,7 +20,8 @@ This script has been written for and only Windows.
 
 # Install
 
-Install python --> download the latest version from python.org
+Install Google Chrome --> download the latest version from google.com
+Install Python --> download the latest version from python.org
 
 OPEN A CMD COMMAND LINE
 
