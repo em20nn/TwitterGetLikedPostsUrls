@@ -21,6 +21,7 @@ This script has been written for and only Windows.
 # Install
 
 Install Google Chrome --> download the latest version from google.com
+
 Install Python --> download the latest version from python.org
 
 OPEN A CMD COMMAND LINE
