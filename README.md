@@ -8,6 +8,7 @@ A python script to help you get your liked posts urls and write them into a file
 
 This script has been written in Windows 10 and only works on Windows PCs.
 
+- [python]
 - [hashlib]
 - [selenium]
 - [time]
@@ -19,8 +20,12 @@ This script has been written in Windows 10 and only works on Windows PCs.
 
 They can be installed by running:
 
+for python --> download the latest version from python.org
+OPEN A CMD COMMAND LINE
 ````
-pip install hashlib selenium time os keyboard warnings argparse getpass
+py -m pip install selenium
+py -m pip install keyboard
+py -m pip install wget
 ````
 
 
@@ -29,6 +34,10 @@ pip install hashlib selenium time os keyboard warnings argparse getpass
 in Windows Powershell
 ```
 C:\Users\user\Desktop\TwitterGetLikedPostsUrls-main\TwitterGetLikedPostsUrls-main\TwitterGetLiked> py .\twitter_liked_urls.py 
+```
+in CMD
+```
+C:\Users\user\Desktop\TwitterGetLikedPostsUrls-main\TwitterGetLikedPostsUrls-main\TwitterGetLiked> py twitter_liked_urls.py 
 ```
 
 ### Arguments
