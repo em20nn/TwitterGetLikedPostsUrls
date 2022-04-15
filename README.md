@@ -25,7 +25,14 @@ pip install hashlib selenium time os keyboard warnings argparse getpass
 
 ## Usage
 
-"py twitter_liked_urls.py" inside the folder in Windows Powershell
+inside the folder in Windows Powershell
+
+```
+C:\Users\user\Desktop\foldername> 
+```
+```
+py twitter_liked_urls.py 
+```
 
 ### Arguments
 
