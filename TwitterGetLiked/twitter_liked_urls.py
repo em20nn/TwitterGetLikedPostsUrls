@@ -112,11 +112,11 @@ except Exception as e:
 if args.username:
     username = args.username
 else:
-    username = input('username:')
+    username = input('Twitter login username:')
 if args.passwd:
     password = args.passwd
 else:
-    password = getpass.getpass('password:')
+    password = getpass.getpass('Twitter login password:')
 if args.account:
     which_accounts_liked_posts = args.account
 else:
