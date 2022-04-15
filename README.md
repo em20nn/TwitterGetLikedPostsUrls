@@ -1,3 +1,4 @@
+# ONLY FOR WINDOWS DEVICES
 # Twitter Get Liked Posts Urls
 
 A python script to help you get your liked posts urls and write them into a file.
