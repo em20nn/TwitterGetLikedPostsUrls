@@ -71,7 +71,11 @@ except Exception as e:
                     exit()
                 if i[ll] == "is":
                     version = i[ll+1]
-                    if version[0:3] == "101":
+                    if version[0:3] == "103":
+                        ver_url = "103.0.5060.24"
+                    elif version[0:3] == "102":
+                        ver_url = "102.0.5005.61"
+                    elif version[0:3] == "101":
                         ver_url = "101.0.4951.15"
                     elif version[0:3] == "100":
                         ver_url = "100.0.4896.60"
