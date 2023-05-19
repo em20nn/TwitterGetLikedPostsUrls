@@ -73,6 +73,14 @@ except Exception as e:
                     version = i[ll+1]
                     if version[0:3] == "103":
                         ver_url = "103.0.5060.24"
+                    elif version[0:3] == "104":
+                        ver_url = "104.0.5112.79"
+                    elif version[0:3] == "105":
+                        ver_url = "105.0.5195.52"
+                    elif version[0:3] == "106":
+                        ver_url = "106.0.5249.61"
+                    elif version[0:3] == "107":
+                        ver_url = "107.0.5304.62"
                     elif version[0:3] == "102":
                         ver_url = "102.0.5005.61"
                     elif version[0:3] == "101":
@@ -81,10 +89,27 @@ except Exception as e:
                         ver_url = "100.0.4896.60"
                     elif version[0:2] == "99":
                         ver_url = "99.0.4844.51"
+                    elif version[0:3] == "108":
+                        ver_url = "108.0.5359.71"
+                    elif version[0:3] == "109":
+                        ver_url = "109.0.5414.74"
+                    elif version[0:3] == "110":
+                        ver_url = "110.0.5481.77"
+                    elif version[0:3] == "111":
+                        ver_url = "111.0.5563.64"
+                    elif version[0:3] == "112":
+                        ver_url = "112.0.5615.49" 
+                    elif version[0:3] == "113":
+                        ver_url = "113.0.5672.63" 
+                    elif version[0:3] == "114":
+                        ver_url = "114.0.5735.16" 
+                    elif version[0:3] == "new":
+                        ver_url = "new"                                                                                                                                                
                     else:
                         ver_url = version
                     import wget
                     import zipfile
+                    print(ver_url)
                     wget.download(
                         f"https://chromedriver.storage.googleapis.com/{ver_url}/chromedriver_win32.zip", f"chromedriver.zip")
                     with zipfile.ZipFile(f"chromedriver.zip", 'r') as zip_ref:
@@ -130,7 +155,7 @@ if args.type:
 else:
     new_lines_or_spaces = "new_lines"
 auto_del_ss = True
-ss_with_key_stroke = False
+ss_with_key_stroke = True
 quit_with_key_stroke = True
 dev_infos = False
 until_certain_element = True
@@ -150,16 +175,16 @@ else:
 if args.err:
     max_errors_expected = args.err  # choose between 1 and 20, default = 8
 else:
-    max_errors_expected = 8
+    max_errors_expected = 20
 
 if new_lines_or_spaces != "new_lines":
     if new_lines_or_spaces != "spaces":
         print("wrong registration type")
         exit()
-if how_fast > 10:
+if 1 > how_fast > 10:
     print("fast must be between 1 and 10")
     exit()
-if max_errors_expected > 20:
+if 1 > max_errors_expected > 20:
     print("max expected error must be between 1 and 20")
     exit()
 #-------------------- login and navigate to liked posts
@@ -245,7 +270,7 @@ while True:
                 continue
     if err_break == True:
         print(
-            f"more than {max_errors_expected} errors occured, please lower fast (currently={how_fast}) and increase max errors expected (currently={max_errors_expected}) ")
+            f"more than {max_errors_expected} errors occured, please lower fast (currently={how_fast}) and/or increase max errors expected (currently={max_errors_expected}) ")
         break
     if cer_ele == True:
         print("element reached")
@@ -289,7 +314,7 @@ while check_3 == True:
         elif final_exists == "n":
             check_3 = False
             final_file_path = input(
-                "write new file name (ex. file_name.txt)(note that if the file exists, it will be overrode): ")
+                "write new file name (ex. file_name.txt)(note that if the file exists, it will be overwritten): ")
         else:
             print("choice doesn't exists")
     else:
